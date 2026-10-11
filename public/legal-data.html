@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>法律数据服务 — 律通和数智科技有限公司</title>
+<meta name="description" content="聚焦人工智能治理、数据合规与跨境法律，连接中国与世界的法律知识。">
+<style>
+:root{
+  --navy:#0E2A47;
+  --brand:#2563EB;
+  --ink:#1E3A5F;
+  --body:#374151;
+  --muted:#6B7280;
+  --line:#E5E7EB;
+  --bg:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Source Han Sans SC","Microsoft YaHei",-apple-system,sans-serif;
+  color:var(--body);background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+
+/* ── 导航(同首页) ── */
+header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.brand{display:flex;flex-direction:column;gap:2px}
+.brand .cn{font-size:17px;font-weight:700;color:var(--ink);letter-spacing:.5px}
+.brand .en{font-size:11.5px;color:var(--muted);letter-spacing:1.2px}
+.nav-links{display:flex;gap:36px}
+.nav-links a{font-size:15px;color:var(--ink);font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--brand)}
+
+/* ── 面包屑 ── */
+.crumbs{padding:22px 0 0;font-size:13px;color:var(--muted)}
+.crumbs a:hover{color:var(--brand)}
+
+/* ── Hero ── */
+.hero{padding:56px 0 48px;border-bottom:1px solid var(--line)}
+.hero h1{font-size:56px;font-weight:900;color:var(--navy);letter-spacing:1px;margin-bottom:18px}
+.hero p{font-size:16px;line-height:1.75;color:var(--muted);max-width:60ch}
+
+/* ── 编号列表 ── */
+.items{padding:20px 0 72px}
+.item{display:flex;align-items:baseline;gap:36px;padding:40px 0;border-bottom:1px solid var(--line);transition:padding-left .25s}
+.item:last-child{border-bottom:none}
+.item:hover{padding-left:10px}
+.item .num{font-size:15px;font-weight:700;color:var(--brand);letter-spacing:1px;min-width:32px}
+.item .t{font-size:34px;font-weight:800;color:var(--ink);letter-spacing:.5px}
+.item .d{margin-left:auto;font-size:14.5px;color:var(--muted);max-width:38ch;text-align:right;line-height:1.7}
+
+/* 04 深藏青大卡片 */
+.item-04{padding:40px 0 56px;border-bottom:none}
+.item-04 .num{font-size:15px;font-weight:700;color:var(--brand);letter-spacing:1px;display:block;margin-bottom:14px}
+.panel{
+  background:var(--navy);border-radius:14px;padding:44px 48px;
+  display:flex;gap:24px;align-items:stretch;
+}
+.panel .main{flex:1;display:flex;flex-direction:column;justify-content:center}
+.panel .main .t{font-size:34px;font-weight:800;color:#fff;letter-spacing:.5px;margin-bottom:10px}
+.panel .main .d{font-size:14.5px;color:rgba(255,255,255,.72);line-height:1.7;max-width:40ch}
+.country{
+  flex:1;border:1px solid rgba(255,255,255,.35);border-radius:10px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+  min-height:150px;color:#fff;transition:background .25s,border-color .25s;
+}
+.country:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.65)}
+.country .cn2{font-size:26px;font-weight:800;letter-spacing:2px}
+.country .en2{font-size:11px;letter-spacing:2.5px;color:rgba(255,255,255,.6)}
+.country .tag{margin-top:6px;font-size:12.5px;color:#8FB4F5;font-weight:600}
+
+/* ── 页脚 ── */
+footer{border-top:1px solid var(--line);padding:22px 0}
+.foot{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+.foot .slogan{color:var(--brand);font-weight:600;letter-spacing:1px}
+
+@media(max-width:900px){
+  .hero h1{font-size:40px}
+  .wrap{padding:0 24px}
+  .item{flex-wrap:wrap;gap:12px}
+  .item .d{margin-left:0;text-align:left;max-width:100%}
+  .panel{flex-direction:column;padding:32px 28px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">
+      <span class="cn">律通和数智科技有限公司</span>
+      <span class="en">IntLaws Technology Co., Ltd.</span>
+    </div>
+    <nav class="nav-links">
+      <a href="https://intlaws.com/">首页</a>
+      <a href="#services">服务领域</a>
+      <a href="https://intlaws.com/#contact">联系合作</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="crumbs"><a href="https://intlaws.com/">首页</a> / 法律数据服务</div>
+  </div>
+
+  <section class="hero" id="services">
+    <div class="wrap">
+      <h1>法律数据服务</h1>
+      <p>聚焦数据与人工智能治理、合规与跨境法律，连接中国与世界的法律知识。</p>
+    </div>
+  </section>
+
+  <section class="items">
+    <div class="wrap">
+
+      <a class="item" href="https://ai.intlaws.com/">
+        <span class="num">01</span>
+        <span class="t">数据与人工智能治理</span>
+        <span class="d">数据合规与人工智能治理的法律研究、规则解读与实务指引。</span>
+      </a>
+
+      <a class="item" href="https://ai.intlaws.com/">
+        <span class="num">02</span>
+        <span class="t">中国涉外法</span>
+        <span class="d">涉外法律法规、规章与国际条约的结构化整理与智能检索。</span>
+      </a>
+
+      <div class="item-04">
+        <span class="num">03</span>
+        <div class="panel">
+          <div class="main">
+            <div class="t">企业出海</div>
+            <div class="d">面向出海企业的国别法律知识服务，覆盖准入、合规与数据跨境。</div>
+          </div>
+          <a class="country" href="https://ai.intlaws.com/vn/">
+            <span class="cn2">越南</span>
+            <span class="en2">VIETNAM</span>
+            <span class="tag">即将上线</span>
+          </a>
+          <a class="country" href="https://ai.intlaws.com/">
+            <span class="cn2">马来西亚</span>
+            <span class="en2">MALAYSIA</span>
+            <span class="tag">规划中</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 律通和数智科技有限公司</span>
+    <span class="slogan">专业为本 · 数智向新</span>
+  </div>
+</footer>
+
+</body>
+</html>
