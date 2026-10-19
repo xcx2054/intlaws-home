@@ -173,5 +173,25 @@ footer{border-top:1px solid var(--line);padding:22px 0}
   </div>
 </footer>
 
+<script>
+/* 链接规则：intlaws.com 的二级域名链接点击后打开新标签；主域 intlaws.com/www 与同源链接直接跳转 */
+(function () {
+  var APEX = 'intlaws.com';
+  function isSubdomain(host) {
+    host = (host || '').toLowerCase();
+    if (host === APEX || host === 'www.' + APEX) return false;
+    return host.slice(-(APEX.length + 1)) === '.' + APEX;
+  }
+  document.addEventListener('click', function (e) {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a) return;
+    var u; try { u = new URL(a.getAttribute('href'), location.href); } catch (_) { return; }
+    if (u.protocol !== 'http:' && u.protocol !== 'https:') return;
+    if (u.origin === location.origin) return;
+    if (isSubdomain(u.hostname)) { e.preventDefault(); window.open(u.href, '_blank', 'noopener'); }
+  }, false);
+})();
+</script>
 </body>
 </html>
